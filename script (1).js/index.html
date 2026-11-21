@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نخبة الأناقة | متجر إلكتروني متكامل</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <header class="navbar">
+    <div class="logo">نخبة<span>.</span></div>
+    <nav class="nav-links">
+      <a href="#hero">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#features">لماذا نحن؟</a>
+    </nav>
+    <button class="cart-btn" id="openCartBtn">
+      🛒 السلة (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <!-- القسم الترحيبي (Hero) -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <span class="badge">تشكيلة 2026 الحصرية</span>
+      <h1>ارتقِ بأسلوبك مع منتجات مصممة للتميز</h1>
+      <p>تجربة تسوق سريعة، جودة مضمونة، وتوصيل لباب منزلك في أقل من 24 ساعة.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">تصفح المنتجات الآن</a>
+        <a href="#features" class="btn-secondary">اكتشف العروض</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>+5,000</strong><span>عميل سعيد</span></div>
+      <div class="stat"><strong>24 ساعة</strong><span>توصيل سريع</span></div>
+      <div class="stat"><strong>100%</strong><span>ضمان الجودة</span></div>
+    </div>
+  </section>
+
+  <!-- قسم المنتجات التفاعلي -->
+  <section id="products" class="products-section">
+    <div class="section-header">
+      <h2>أحدث المنتجات</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="watches">ساعات</button>
+        <button class="filter-btn" data-filter="perfumes">عطور</button>
+        <button class="filter-btn" data-filter="accessories">إكسسوارات</button>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+      <!-- يتم توليد المنتجات تلقائياً عبر JavaScript -->
+    </div>
+  </section>
+
+  <!-- مميزات المتجر (تُقنع صاحب المحل بقيمة الموقع) -->
+  <section id="features" class="features-section">
+    <div class="feature-card">
+      <div class="icon">⚡</div>
+      <h3>طلب بنقرة واحدة</h3>
+      <p>سهولة تامة للعميل لإتمام الطلب دون تعقيد، مما يضاعف مبيعات المحل.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">📱</div>
+      <h3>متجاوب مع كل الهواتف</h3>
+      <p>تصميم سريع وخفيف يعمل بسلاسة على جميع الشاشات.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">💬</div>
+      <h3>ربط مباشر مع واتساب</h3>
+      <p>تصل تفاصيل السلة وعنوان العميل مباشرة إلى هاتف صاحب المحل.</p>
+    </div>
+  </section>
+
+  <!-- سلة المشتريات الجانبية -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>سلة المشتريات</h3>
+      <button id="closeCartBtn">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-msg">السلة فارغة حالياً</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>المجموع الكلي:</span>
+        <strong id="cartTotal">$0</strong>
+      </div>
+      <input type="text" id="customerName" placeholder="الاسم الكامل للعميل" />
+      <input type="text" id="customerAddress" placeholder="المدينة / العنوان" />
+      <button class="checkout-btn" id="whatsappOrderBtn">إتمام الطلب عبر واتساب 🚀</button>
+    </div>
+  </aside>
+
+  <footer>
+    <p>© 2026 جميع الحقوق محفوظة لمتجر نخبة</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
